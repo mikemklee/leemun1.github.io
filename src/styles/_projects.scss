@@ -1,0 +1,134 @@
+.projects {
+  border-top: 1px solid rgba(lightgrey, 0.3);
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 3rem;
+  grid-column-gap: 7rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: 1fr;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-row-gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  &__header {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    font-family: 'Assistant';
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 0 2rem;
+    }
+  }
+}
+
+.project {
+  font-family: 'Assistant';
+  margin-bottom: 7rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin-bottom: 1rem;
+  }
+
+  &__image {
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 10px 30px rgba(34, 34, 34, 0.2);
+    }
+  }
+
+  &__title {
+    display: flex;
+    margin-top: 3rem;
+
+    &--title {
+      font-size: 3.5rem;
+      font-weight: 600;
+      cursor: pointer;
+
+      &:hover span {
+        border-bottom: 2px solid;
+      }
+    }
+
+    &--live {
+      align-self: center;
+      color: #444;
+      background: none;
+      font-family: 'Rubik';
+      font-weight: 500;
+      font-size: 1.6rem;
+      display: block;
+      border: 3px solid #444;
+      padding: 0.5rem;
+      margin-left: auto;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        color: #fff;
+        background-color: #444;
+      }
+    }
+
+    &--nolive {
+      align-self: center;
+      color: rgba(gray, 0.5);
+      background: none;
+      font-family: 'Rubik';
+      font-weight: 500;
+      font-size: 1.6rem;
+      display: block;
+      border: 3px solid rgba(gray, 0.5);
+      padding: 0.5rem;
+      margin-left: auto;
+      outline: none;
+    }
+  }
+
+  &__description {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+
+  &__tools {
+    color: #555;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    display: inline-block;
+
+    span {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__title,
+  &__description,
+  &__tools {
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 0 1rem;
+    }
+  }
+}

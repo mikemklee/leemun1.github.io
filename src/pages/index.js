@@ -1,13 +1,20 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
-const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
-)
+import Header from '../components/Header'
+import Statement from '../components/Statement'
+import Projects from '../components/Projects'
+import Footer from '../components/Footer'
+
+const IndexPage = props => {
+  const pathname = props.location.pathname
+  return (
+    <div className="container">
+      <Header pathname={pathname} />
+      <Statement />
+      <Projects />
+      <Footer />
+    </div>
+  )
+}
 
 export default IndexPage

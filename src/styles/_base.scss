@@ -1,0 +1,75 @@
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 87.5em; //1400px
+$bp-large: 62.5em; //1000px
+$bp-medium: 43.75em; //700px
+$bp-small: 37.5em; //600px
+$bp-smallest: 31.25em; //500px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+* > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html {
+  color: #333;
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'Assistant';
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main {
+  position: relative;
+  min-height: 100%;
+  margin-bottom: 15rem;
+}
+
+.container {
+  padding: 0 7rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 1rem 3.5rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 1rem 0;
+  }
+}
+
+.alert {
+  font-size: 3rem;
+  margin: 0 auto;
+  width: 40rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1,
+  h3 {
+    font-family: 'Assistant';
+    font-weight: 300;
+    margin: 1rem;
+  }
+}
