@@ -1,0 +1,2 @@
+webpackJsonp([0xefeaa6d1881d],{203:function(e,t,u){"use strict";function l(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var n=u(4),a=l(n),r=function(){return a.default.createElement("div",{className:"alert"},a.default.createElement("h1",null,"About"),a.default.createElement("h3",null,"Under construction."))};t.default=r,e.exports=t.default}});
+//# sourceMappingURL=component---src-pages-about-js-34deeaacda0e19369c36.js.map
