@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-pages-index-js","path":"/","result":{"pageContext":{}}}
+{"componentChunkName":"component---src-pages-index-js","path":"/","result":{"data":{"allMarkdownRemark":{"edges":[{"node":{"id":"d399af58-2f02-5746-9eeb-952f4fb88f93","frontmatter":{"description":"testing markdown in Gatsby","title":"Does this work?","date":"2020-04-02"},"excerpt":"Yo, does this work? hello, world!"}}]}},"pageContext":{}}}
