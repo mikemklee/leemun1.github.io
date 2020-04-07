@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-templates-blog-post-js","path":"/test/","result":{"data":{"markdownRemark":{"html":"<h3>Yo, does this work?</h3>\n<p>hello, world!</p>","frontmatter":{"title":"Does this work?"}}},"pageContext":{"slug":"/test/"}}}
+{"componentChunkName":"component---src-templates-blog-post-js","path":"/test/","result":{"data":{"markdownRemark":{"html":"<h3>Yo, does this work?</h3>\n<p>hello, world!</p>\n<p><a href=\"https://www.google.com\">Take me to GOOGLE!</a></p>","frontmatter":{"title":"Does this work?"}}},"pageContext":{"slug":"/test/"}}}
